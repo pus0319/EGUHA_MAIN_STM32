@@ -1,0 +1,7 @@
+egtn_lib_userdelay.c:15:6:EGTN_LIB_USERDELAY_tickcount	0	static
+egtn_lib_userdelay.c:20:10:EGTN_LIB_USERDLEAY_gettick	0	static
+egtn_lib_userdelay.c:25:6:EGTN_LIB_USERDELAY_set	0	static
+egtn_lib_userdelay.c:44:14:EGTN_LIB_USERDELAY_start	0	static
+egtn_lib_userdelay.c:57:6:EGTN_LIB_USERDELAY_stop	0	static
+egtn_lib_userdelay.c:62:15:CheckDelayValue	0	static
+egtn_lib_userdelay.c:80:14:EGTN_LIB_USERDELAY_isfired	0	static

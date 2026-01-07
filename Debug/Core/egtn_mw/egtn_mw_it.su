@@ -1,0 +1,2 @@
+egtn_mw_it.c:10:6:EGTN_MW_IT_init	8	static
+egtn_mw_it.c:19:6:HAL_TIM_PeriodElapsedCallback	8	static

@@ -1,0 +1,4 @@
+x_allocator.c:97:7:XALLOC_Alloc	16	static
+x_allocator.c:131:6:XALLOC_Free	8	static
+x_allocator.c:154:7:XALLOC_Realloc	24	static
+x_allocator.c:191:7:XALLOC_Calloc	16	static

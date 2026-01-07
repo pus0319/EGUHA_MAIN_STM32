@@ -1,0 +1,2 @@
+egtn_lib_LPF.c:12:9:EGTN_LIB_LPF_init	0	static
+egtn_lib_LPF.c:28:10:EGTN_LIB_LPF_calc	8	static

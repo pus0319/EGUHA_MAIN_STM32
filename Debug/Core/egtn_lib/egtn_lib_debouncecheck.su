@@ -1,0 +1,4 @@
+egtn_lib_debouncecheck.c:12:6:EGTN_LIB_DEBOUNCECHECK_init	0	static
+egtn_lib_debouncecheck.c:21:6:EGTN_LIB_DEBOUNCECHECK_push	0	static
+egtn_lib_debouncecheck.c:26:6:EGTN_LIB_DEBOUNCECHECK_shift	12	static
+egtn_lib_debouncecheck.c:35:9:EGTN_LIB_DEBOUNCECHECK_compare	16	static

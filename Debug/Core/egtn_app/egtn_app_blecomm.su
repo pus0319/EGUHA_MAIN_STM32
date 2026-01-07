@@ -1,0 +1,7 @@
+egtn_app_blecomm.c:18:6:app_ble_change_state	0	static
+egtn_app_blecomm.c:23:9:app_ble_is_state_change	0	static
+egtn_app_blecomm.c:31:6:EGTN_APP_BLE_peripheral_state_machine	8	static
+egtn_app_blecomm.c:75:9:EGTN_APP_BLE_startup	8	static
+egtn_app_blecomm.c:86:9:EGTN_APP_BLE_init	0	static
+egtn_app_blecomm.c:96:6:EGTN_APP_BLE_main	8	static
+egtn_app_blecomm.c:103:6:EGTN_APP_BLE_process	8	static

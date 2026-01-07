@@ -1,0 +1,4 @@
+egtn_app_nonos_loop.c:12:9:EGUHAbooting	8	static
+egtn_app_nonos_loop.c:55:9:EGUHAiniting	8	static
+egtn_app_nonos_loop.c:99:6:EGUHAmain	8	static
+egtn_app_nonos_loop.c:111:6:EGUHAsystem	32	static

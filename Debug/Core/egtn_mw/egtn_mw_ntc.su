@@ -1,0 +1,6 @@
+egtn_mw_ntc.c:207:5:EGTN_MW_NTC_cal_ntc	12	static
+egtn_mw_ntc.c:233:9:EGTN_MW_NTC_store_value	8	static
+egtn_mw_ntc.c:249:9:EGTN_MW_NTC_is_ready	0	static
+egtn_mw_ntc.c:261:9:EGTN_MW_NTC_get_temp	0	static
+egtn_mw_ntc.c:267:9:EGTN_MW_NTC_cal_temp	16	static
+egtn_mw_ntc.c:293:9:EGTN_MW_NTC_loop	8	static

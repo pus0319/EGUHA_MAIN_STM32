@@ -1,0 +1,4 @@
+egtn_app_safetyfunc.c:12:9:EGTN_APP_SFTF_startup	8	static
+egtn_app_safetyfunc.c:21:9:EGTN_APP_SFTF_init	0	static
+egtn_app_safetyfunc.c:29:6:EGTN_APP_SFTF_main	0	static
+egtn_app_safetyfunc.c:34:6:EGTN_APP_SFTF_process	8	static

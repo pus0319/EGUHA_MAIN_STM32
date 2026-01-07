@@ -1,0 +1,5 @@
+egtn_mw_uart.c:14:6:EGTN_MW_UART_init	8	static
+egtn_mw_uart.c:20:6:EGTN_MW_UART_tx01	8	static
+egtn_mw_uart.c:24:6:EGTN_MW_UART_tx03	8	static
+egtn_mw_uart.c:28:6:EGTN_MW_UART_tx05	8	static
+egtn_mw_uart.c:33:6:HAL_UART_RxCpltCallback	16	static

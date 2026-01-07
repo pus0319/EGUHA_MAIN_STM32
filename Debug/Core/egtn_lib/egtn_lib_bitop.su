@@ -1,0 +1,4 @@
+egtn_lib_bitop.c:12:9:EGTN_LIB_BITOP_ext_u16_to_u8one	0	static
+egtn_lib_bitop.c:19:10:EGTN_LIB_BITOP_combi_u8two_to_u16	0	static
+egtn_lib_bitop.c:30:7:EGTN_LIB_BITOP_bcd_to_short	12	static
+egtn_lib_bitop.c:35:14:EGTN_LIB_BITOP_bcd_to_uint	12	static

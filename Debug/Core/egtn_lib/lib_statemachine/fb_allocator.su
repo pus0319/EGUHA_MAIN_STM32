@@ -1,0 +1,5 @@
+fb_allocator.c:107:6:ALLOC_Init	0	static
+fb_allocator.c:115:6:ALLOC_Term	0	static
+fb_allocator.c:123:7:ALLOC_Alloc	0	static
+fb_allocator.c:163:7:ALLOC_Calloc	16	static
+fb_allocator.c:188:6:ALLOC_Free	0	static

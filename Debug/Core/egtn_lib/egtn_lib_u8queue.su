@@ -1,0 +1,8 @@
+egtn_lib_u8queue.c:11:6:EGTN_LIB_U8QUEUE_comFlush	0	static
+egtn_lib_u8queue.c:18:10:EGTN_LIB_U8QUEUE_comLen	0	static
+egtn_lib_u8queue.c:33:9:read_ringbuffer	8	static
+egtn_lib_u8queue.c:55:9:EGTN_LIB_U8QUEUE_contain	0	static
+egtn_lib_u8queue.c:60:9:EGTN_LIB_U8QUEUE_get_byte	8	static
+egtn_lib_u8queue.c:65:10:EGTN_LIB_U8QUEUE_get_word	16	static
+egtn_lib_u8queue.c:79:6:EGTN_LIB_U8QUEUE_inc_pointer	8	static
+egtn_lib_u8queue.c:84:6:EGTN_LIB_U8QUEUE_push_ring	16	static

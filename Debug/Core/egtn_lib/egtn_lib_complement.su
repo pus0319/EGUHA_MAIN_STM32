@@ -1,0 +1,3 @@
+egtn_lib_complement.c:11:9:EGTN_LIB_COMPLEMENT_TWO_STM32_32bit	0	static
+egtn_lib_complement.c:29:9:EGTN_LIB_BYTE_TO_HEXASCII	8	static
+egtn_lib_complement.c:75:9:EGTN_LIB_HEXASCII_TO_BYTE	8	static

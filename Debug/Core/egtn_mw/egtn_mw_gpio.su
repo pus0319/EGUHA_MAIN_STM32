@@ -1,0 +1,5 @@
+egtn_mw_gpio.c:31:6:EGTN_MW_GPIO_init	8	static
+egtn_mw_gpio.c:80:9:EGTN_MW_GPIO_set_gpo	16	static
+egtn_mw_gpio.c:100:9:EGTN_MW_GPIO_lock_gpo	0	static
+egtn_mw_gpio.c:116:9:EGTN_MW_GPIO_get_gpo	8	static
+egtn_mw_gpio.c:131:9:EGTN_MW_GPIO_get_gpi	8	static

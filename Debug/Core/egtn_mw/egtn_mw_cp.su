@@ -1,0 +1,14 @@
+egtn_mw_cp.c:12:6:EGTN_MW_CP_init	16	static
+egtn_mw_cp.c:42:9:EGTN_MW_CP_set_duty	16	static
+egtn_mw_cp.c:55:8:EGTN_MW_CP_get_duty	0	static
+egtn_mw_cp.c:59:8:EGTN_MW_CP_get_h_final_voltage	0	static
+egtn_mw_cp.c:63:8:EGTN_MW_CP_get_l_final_voltage	0	static
+egtn_mw_cp.c:68:13:EGTN_MW_CP_get_cp_state	0	static
+egtn_mw_cp.c:74:10:EGTN_MW_CP_cal_ampe_to_duty	16	static
+egtn_mw_cp.c:94:9:EGTN_MW_CP_print_cp_state	8	static
+egtn_mw_cp.c:149:9:EGTN_MW_CP_average_adc	32	static
+egtn_mw_cp.c:213:9:CP_is_complete_ADC	0	static
+egtn_mw_cp.c:243:6:CP_reset_complete_ADC	0	static
+egtn_mw_cp.c:300:9:EGTN_MW_CP_calculate_adc	24	static
+egtn_mw_cp.c:350:9:EGTN_MW_CP_calculate_state	32	static
+egtn_mw_cp.c:408:6:EGTN_MW_CP_main	8	static

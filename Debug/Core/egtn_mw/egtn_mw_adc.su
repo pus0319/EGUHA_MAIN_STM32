@@ -1,0 +1,2 @@
+egtn_mw_adc.c:16:6:EGTN_MW_ADC_init	8	static
+egtn_mw_adc.c:28:6:HAL_TIM_OC_DelayElapsedCallback	8	static

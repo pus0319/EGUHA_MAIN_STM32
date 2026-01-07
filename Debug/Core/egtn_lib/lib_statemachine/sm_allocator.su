@@ -1,0 +1,4 @@
+sm_allocator.c:32:7:SMALLOC_Alloc	8	static
+sm_allocator.c:40:6:SMALLOC_Free	8	static
+sm_allocator.c:48:7:SMALLOC_Realloc	8	static
+sm_allocator.c:56:7:SMALLOC_Calloc	8	static
