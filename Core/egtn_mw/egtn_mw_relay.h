@@ -14,6 +14,8 @@
 #include "egtn_mw_gpio.h"
 #include "egtn_mw_pwm.h"
 
+#define __RELAY_DEBUG__		(1)
+
 void EGTN_MW_RELAY_init();
 uint8_t EGTN_MW_RELAY_set_cp_ctl(uint8_t value);
 uint8_t EGTN_MW_RELAY_get_cp_ctl();

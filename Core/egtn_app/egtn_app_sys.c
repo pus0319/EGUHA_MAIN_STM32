@@ -368,16 +368,20 @@ uint8_t app_sys_cal_rms_loop()
 		ac_zct = sqrt(per_t_integral_ac_zct_inst_square);
 
 #if 1
-		uint32_t ac_vrms_u32 = (uint32_t)(ac_vrms);
-		uint32_t ac_irms_u32 = (uint32_t)(ac_irms);
-		uint32_t ac_zctrms_u32 = (uint32_t)(ac_zct);
+		uint32_t ac_vrms_u32 = (uint32_t)(ac_vrms * 100);
+		uint32_t ac_irms_u32 = (uint32_t)(ac_irms * 1000);
+		uint32_t ac_zctrms_u32 = (uint32_t)(ac_zct * 1000);
 
-		ac_vrms_u32 = 1;
-		ac_irms_u32 = 1;
-		ac_zctrms_u32 = 1;
-
-
-		//printf("%ld %ld %ld \r\n",ac_vrms_u32,ac_irms_u32,ac_zctrms_u32);
+		static uint32_t print_tick = 0;
+		if(print_tick > 10)
+		{
+			printf("%ld %ld %ld \r\n",ac_vrms_u32,ac_irms_u32,ac_zctrms_u32);
+			print_tick = 0;
+		}
+		else
+		{
+			print_tick++;
+		}
 #endif
 
 
@@ -524,7 +528,16 @@ uint8_t app_sys_cal_rms_loop()
 		sys_app.ac_zctrms = ac_zctrms_u32;
 
 #if 0
-		printf("%ld %ld %ld \r\n",ac_vrms_u32,ac_irms_u32,ac_zctrms_u32);
+		static uint32_t print_tick = 0;
+		if(print_tick > 3)
+		{
+			printf("%ld %ld %ld \r\n",ac_vrms_u32,ac_irms_u32,ac_zctrms_u32);
+			print_tick = 0;
+		}
+		else
+		{
+			print_tick++;
+		}
 #endif
 
 
@@ -618,19 +631,18 @@ uint8_t EGTN_APP_SYS_init()
 {
 	uint8_t ret = 1;
 
+	// TODO : Little File System value -> init (mJSON)
+
+
+
 	return ret;
 }
 
 void EGTN_APP_SYS_main()
 {
 
-	static uint32_t test_blink = 0;
-	static uint32_t gmi_toggle = 0;
-	static uint32_t mc_toggle = 0;
-	static uint32_t ledbar_tick = 0;
-	static uint32_t ledbar_step = 0;
-
 #if 0
+	static uint32_t test_blink = 0;
 	int temp_cp_h = (int)(100 * EGTN_MW_CP_get_h_final_voltage());
 	int temp_cp_l = (int)(100 * EGTN_MW_CP_get_l_final_voltage());
 
@@ -657,6 +669,7 @@ void EGTN_APP_SYS_main()
 	}
 #endif
 #if 0
+	static uint32_t gmi_toggle = 0;
 	if(800 < gmi_toggle)
 	{
 		HAL_GPIO_TogglePin(GMI_ENABLE_GPIO_Port, GMI_ENABLE_Pin);
@@ -666,6 +679,36 @@ void EGTN_APP_SYS_main()
 	{
 		gmi_toggle++;
 	}
+#endif
+#if 0
+	static uint32_t mc_toggle = 0;
+	if(1000 < mc_toggle)
+	{
+		if(EGTN_OFF == EGTN_MW_RELAY_get_mc_ctl())
+		{
+			EGTN_MW_RELAY_set_mc_ctl(EGTN_ON);
+			printf("mc_on\r\n");
+		}
+		else if(EGTN_ON == EGTN_MW_RELAY_get_mc_ctl())
+		{
+			EGTN_MW_RELAY_set_mc_ctl(EGTN_OFF);
+			printf("mc_off\r\n");
+		}
+		mc_toggle = 0;
+	}
+	else
+	{
+		mc_toggle++;
+	}
+#endif
+#if 0
+
+	if(EGTN_OFF == EGTN_MW_RELAY_get_mc_ctl())
+	{
+		EGTN_MW_RELAY_set_mc_ctl(EGTN_ON);
+		printf("mc_on\r\n");
+	}
+
 #endif
 #if 0
 	if(1000 < mc_toggle)
@@ -688,6 +731,8 @@ void EGTN_APP_SYS_main()
 	}
 #endif
 #if 0
+	static uint32_t ledbar_tick = 0;
+	static uint32_t ledbar_step = 0;
 	if(200 < ledbar_tick)
 	{
 		switch(ledbar_step)
@@ -737,7 +782,29 @@ void EGTN_APP_SYS_main()
 		ledbar_tick++;
 	}
 #endif
+#if 0
+	static uint32_t ccid_self_tick = 0;
+	if(700 > ccid_self_tick)
+	{
+		if(0 == ccid_self_tick)
+		{
+			printf("ccid_self_off\r\n");
+			EGTN_MW_GPIO_set_gpo(CCID_SELF_ENABLE, GPIO_PIN_RESET);
+		}
+		else if(600 == ccid_self_tick)
+		{
+			printf("ccid_self_on\r\n");
+			EGTN_MW_GPIO_set_gpo(CCID_SELF_ENABLE, GPIO_PIN_SET);
+		}
 
+		ccid_self_tick++;
+	}
+	else
+	{
+		ccid_self_tick = 0;
+	}
+
+#endif
 
 	//printf("s:%d\r\n",EGTN_LIB_USERDLEAY_gettick());
 	EGTN_MW_CP_main();

@@ -31,14 +31,14 @@ uint8_t EGTN_MW_RELAY_set_cp_ctl(uint8_t value)
 			else
 			{
 #if ((__RELAY_DEBUG__)==1)
-				EGTN_LIB_LOGGING_printf("CP_RELAY : ON -> ON \r\n");
+				//EGTN_LIB_LOGGING_printf("CP_RELAY : ON -> ON \r\n");
 #endif
 			}
 		}
 		else
 		{
 #if ((__RELAY_DEBUG__)==1)
-				EGTN_LIB_LOGGING_printf("CP_RELAY : OFF -> OFF \r\n");
+				//EGTN_LIB_LOGGING_printf("CP_RELAY : OFF -> OFF \r\n");
 #endif
 		}
 	}
@@ -56,7 +56,7 @@ uint8_t EGTN_MW_RELAY_set_cp_ctl(uint8_t value)
 			else
 			{
 #if ((__RELAY_DEBUG__)==1)
-				EGTN_LIB_LOGGING_printf("CP_RELAY : OFF -> OFF \r\n");
+				//EGTN_LIB_LOGGING_printf("CP_RELAY : OFF -> OFF \r\n");
 #endif
 			}
 
@@ -64,7 +64,7 @@ uint8_t EGTN_MW_RELAY_set_cp_ctl(uint8_t value)
 		else
 		{
 #if ((__RELAY_DEBUG__)==1)
-				EGTN_LIB_LOGGING_printf("CP_RELAY : ON -> ON \r\n");
+				//EGTN_LIB_LOGGING_printf("CP_RELAY : ON -> ON \r\n");
 #endif
 		}
 	}
@@ -151,7 +151,8 @@ uint8_t EGTN_MW_RELAY_set_mc_ctl(uint8_t value)
 #endif
 uint8_t EGTN_MW_RELAY_get_mc_ctl()
 {
-	if(mc_ctl_bak_value == EGTN_ON)
+	//if(mc_ctl_bak_value == EGTN_ON)
+	if(mc_ctl_value == EGTN_ON)
 	{
 		return EGTN_ON;
 	}
@@ -165,7 +166,7 @@ void EGTN_MW_RELAY_mc_ctl_loop()
 {
 	uint8_t ret = EGTN_CONTINUE;
 
-	if(mc_ctl_bak_value == mc_ctl_value)	return;
+	//if(mc_ctl_bak_value == mc_ctl_value)	return;
 
 	if(EGTN_ON == mc_ctl_value)
 	{
@@ -174,6 +175,9 @@ void EGTN_MW_RELAY_mc_ctl_loop()
 			case 0 :
 				mc_ctl_step = 1;
 				EGTN_LIB_USERDELAY_start(&gDelay_mc_rated_to_holding, DELAY_RENEW_OFF);
+#if ((__RELAY_DEBUG__)==1)
+				EGTN_LIB_LOGGING_printf("MC_RELAY : OFF -> ON \r\n");
+#endif
 			break;
 			case 1 :
 				mc_pin[0] = (uint32_t)MC_PIN_BSRR_SET;
@@ -196,6 +200,12 @@ void EGTN_MW_RELAY_mc_ctl_loop()
 	}
 	else if(EGTN_OFF == mc_ctl_value)
 	{
+#if ((__RELAY_DEBUG__)==1)
+		if(0 < mc_ctl_step)
+		{
+			EGTN_LIB_LOGGING_printf("MC_RELAY : ON -> OFF \r\n");
+		}
+#endif
 		mc_pin[0] = (uint32_t)MC_PIN_BSRR_RESET;
 		mc_pin[1] = (uint32_t)MC_PIN_BSRR_RESET;
 		mc_ctl_step = 0;

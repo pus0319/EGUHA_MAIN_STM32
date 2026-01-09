@@ -33,10 +33,17 @@ void EGTN_APP_BLE_peripheral_state_machine()
 	switch(ble_app.state)
 	{
 		case BLE_STAT_INIT :
-			if(1 == EGTN_MW_FC41D_ble_peripheral_init())
+#if((__TEST_CHARGING_DEMO__)==1)
+			if(1 == EGTN_MW_FC41D_ble_peripheral_init_demo())
+			{
+				ble_app.state = BLE_STAT_CONNECTED;
+			}
+#else
+			if(0)
 			{
 				ble_app.state = BLE_STAT_STANDBY;
 			}
+#endif
 		break;
 		case BLE_STAT_STANDBY :
 			if(1 == app_ble_is_state_change())

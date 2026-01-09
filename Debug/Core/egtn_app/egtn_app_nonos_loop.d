@@ -41,22 +41,21 @@ Core/egtn_app/egtn_app_nonos_loop.o: \
  ../Core/egtn_mw/egtn_mw_indiled.h ../Core/egtn_mw/egtn_mw_uart.h \
  ../Core/Inc/usart.h ../Core/egtn_app/egtn_app_blecomm.h \
  ../Core/egtn_lib/egtn_lib_u8queue.h ../Core/egtn_mw/egtn_mw_FC41D.h \
- ../Core/egtn_lib/egtn_lib_string.h ../Core/egtn_mw/egtn_mw_pwm.h \
- ../Core/egtn_lib/egtn_lib_logging.h ../Core/egtn_mw/egtn_mw_adc.h \
- ../Core/Inc/adc.h ../Core/Inc/dma.h ../Core/egtn_mw/egtn_mw_cp.h \
+ ../Core/egtn_lib/egtn_lib_string.h ../Core/egtn_app/egtn_app_charging.h \
+ ../Core/egtn_app/egtn_app_sys.h ../Core/Inc/iwdg.h \
+ ../Core/egtn_mw/egtn_embd_fs.h ../Core/egtn_mw/egtn_mw_serialflash.h \
+ ../Core/Inc/spi.h ../Core/egtn_lib/egtn_lib_littlefs.h \
+ ../Core/egtn_lib/egtn_lib_littlefs_util.h ../Core/egtn_mw/egtn_mw_adc.h \
+ ../Core/Inc/adc.h ../Core/Inc/dma.h ../Core/egtn_mw/egtn_mw_pwm.h \
+ ../Core/egtn_lib/egtn_lib_logging.h ../Core/egtn_mw/egtn_mw_cp.h \
  ../Core/egtn_lib/egtn_lib_debouncecheck.h ../Core/egtn_mw/egtn_mw_gpio.h \
  ../Core/egtn_mw/egtn_mw_pwm.h ../Core/egtn_mw/egtn_mw_relay.h \
- ../Core/egtn_mw/egtn_mw_adc.h ../Core/egtn_app/egtn_app_sys.h \
- ../Core/Inc/iwdg.h ../Core/egtn_mw/egtn_embd_fs.h \
- ../Core/egtn_mw/egtn_mw_serialflash.h ../Core/Inc/spi.h \
- ../Core/egtn_lib/egtn_lib_littlefs.h \
- ../Core/egtn_lib/egtn_lib_littlefs_util.h ../Core/egtn_mw/egtn_mw_cp.h \
- ../Core/egtn_mw/egtn_mw_indiled.h ../Core/egtn_mw/egtn_mw_ntc.h \
+ ../Core/egtn_mw/egtn_mw_cp.h ../Core/egtn_mw/egtn_mw_indiled.h \
+ ../Core/egtn_mw/egtn_mw_ntc.h ../Core/egtn_mw/egtn_mw_adc.h \
  ../Core/egtn_mw/egtn_mw_serialflash.h ../Core/egtn_mw/egtn_mw_uart.h \
- ../Core/egtn_app/egtn_app_safetyfunc.h \
- ../Core/egtn_app/egtn_app_charging.h \
  ../Core/egtn_lib/lib_statemachine/egtn_lib_StateMachine.h \
- ../Core/egtn_app/egtn_app_blecomm.h
+ ../Core/egtn_app/egtn_app_safetyfunc.h \
+ ../Core/egtn_app/egtn_app_charging.h ../Core/egtn_app/egtn_app_blecomm.h
 
 ../Core/egtn_app/egtn_app_nonos_loop.h:
 
@@ -156,27 +155,7 @@ Core/egtn_app/egtn_app_nonos_loop.o: \
 
 ../Core/egtn_lib/egtn_lib_string.h:
 
-../Core/egtn_mw/egtn_mw_pwm.h:
-
-../Core/egtn_lib/egtn_lib_logging.h:
-
-../Core/egtn_mw/egtn_mw_adc.h:
-
-../Core/Inc/adc.h:
-
-../Core/Inc/dma.h:
-
-../Core/egtn_mw/egtn_mw_cp.h:
-
-../Core/egtn_lib/egtn_lib_debouncecheck.h:
-
-../Core/egtn_mw/egtn_mw_gpio.h:
-
-../Core/egtn_mw/egtn_mw_pwm.h:
-
-../Core/egtn_mw/egtn_mw_relay.h:
-
-../Core/egtn_mw/egtn_mw_adc.h:
+../Core/egtn_app/egtn_app_charging.h:
 
 ../Core/egtn_app/egtn_app_sys.h:
 
@@ -192,20 +171,42 @@ Core/egtn_app/egtn_app_nonos_loop.o: \
 
 ../Core/egtn_lib/egtn_lib_littlefs_util.h:
 
+../Core/egtn_mw/egtn_mw_adc.h:
+
+../Core/Inc/adc.h:
+
+../Core/Inc/dma.h:
+
+../Core/egtn_mw/egtn_mw_pwm.h:
+
+../Core/egtn_lib/egtn_lib_logging.h:
+
+../Core/egtn_mw/egtn_mw_cp.h:
+
+../Core/egtn_lib/egtn_lib_debouncecheck.h:
+
+../Core/egtn_mw/egtn_mw_gpio.h:
+
+../Core/egtn_mw/egtn_mw_pwm.h:
+
+../Core/egtn_mw/egtn_mw_relay.h:
+
 ../Core/egtn_mw/egtn_mw_cp.h:
 
 ../Core/egtn_mw/egtn_mw_indiled.h:
 
 ../Core/egtn_mw/egtn_mw_ntc.h:
 
+../Core/egtn_mw/egtn_mw_adc.h:
+
 ../Core/egtn_mw/egtn_mw_serialflash.h:
 
 ../Core/egtn_mw/egtn_mw_uart.h:
 
+../Core/egtn_lib/lib_statemachine/egtn_lib_StateMachine.h:
+
 ../Core/egtn_app/egtn_app_safetyfunc.h:
 
 ../Core/egtn_app/egtn_app_charging.h:
-
-../Core/egtn_lib/lib_statemachine/egtn_lib_StateMachine.h:
 
 ../Core/egtn_app/egtn_app_blecomm.h:

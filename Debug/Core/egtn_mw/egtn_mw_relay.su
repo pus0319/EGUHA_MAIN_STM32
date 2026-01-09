@@ -2,6 +2,6 @@ egtn_mw_relay.c:16:9:EGTN_MW_RELAY_set_cp_ctl	8	static
 egtn_mw_relay.c:74:9:EGTN_MW_RELAY_get_cp_ctl	8	static
 egtn_mw_relay.c:143:9:EGTN_MW_RELAY_set_mc_ctl	0	static
 egtn_mw_relay.c:152:9:EGTN_MW_RELAY_get_mc_ctl	0	static
-egtn_mw_relay.c:164:6:EGTN_MW_RELAY_mc_ctl_loop	16	static
-egtn_mw_relay.c:218:6:EGTN_MW_RELAY_init	8	static
-egtn_mw_relay.c:233:6:EGTN_MW_RELAY_main	8	static
+egtn_mw_relay.c:165:6:EGTN_MW_RELAY_mc_ctl_loop	16	static
+egtn_mw_relay.c:228:6:EGTN_MW_RELAY_init	8	static
+egtn_mw_relay.c:243:6:EGTN_MW_RELAY_main	8	static

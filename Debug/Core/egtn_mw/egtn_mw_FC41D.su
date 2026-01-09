@@ -52,5 +52,5 @@ egtn_mw_FC41D.c:724:9:EGTN_MW_FC41D_cmd_task_queue_is_contain	0	static
 egtn_mw_FC41D.c:740:6:EGTN_MW_FC41D_push_cmd_task_queue	8	static
 egtn_mw_FC41D.c:752:6:fc41d_rx_framesearch	352	static
 egtn_mw_FC41D.c:912:9:EGTN_MW_FC41D_startup	8	static
-egtn_mw_FC41D.c:942:9:EGTN_MW_FC41D_ble_peripheral_init	16	static
+egtn_mw_FC41D.c:942:9:EGTN_MW_FC41D_ble_peripheral_init_demo	16	static
 egtn_mw_FC41D.c:1005:6:EGTN_MW_FC41D_ble_peripheral_loop	24	static

@@ -939,7 +939,7 @@ uint8_t EGTN_MW_FC41D_startup()
 	return ret;
 }
 
-uint8_t EGTN_MW_FC41D_ble_peripheral_init()
+uint8_t EGTN_MW_FC41D_ble_peripheral_init_demo()
 {
 	uint8_t ret = 0;
 	static uint8_t step = 0;
@@ -1102,12 +1102,32 @@ void EGTN_MW_FC41D_ble_peripheral_loop()
 	if(0 < m_fc41d_ble.cmd_resp_raw_data_len)//is Row Data
 	{
 
-		//TODO : Process function pointer input external ..
-
 		printf("FC41D_RawData:%s\r\n",m_fc41d_ble.cmd_resp_raw_data_buf);
 
-#if 1
+		//TODO : FC41D --> BLE _ send GATT_parser
+		if(0)
+		{
+
+		}
 		//TODO : Send Gatt Data example!
+		if(0)
+		{
+
+		}
+
+#if((__TEST_CHARGING_DEMO__) == 1)
+		if(0 == strcmp(m_fc41d_ble.cmd_resp_raw_data_buf,"#START\r\n"))
+		{
+			EGTN_APP_CHRG_set_start_charging();
+		}
+		if(0 == strcmp(m_fc41d_ble.cmd_resp_raw_data_buf,"#STOP\r\n"))
+		{
+			EGTN_APP_CHRG_set_finish_charging();
+		}
+		if(0 == strcmp(m_fc41d_ble.cmd_resp_raw_data_buf,"#PAUSE\r\n"))
+		{
+			EGTN_APP_CHRG_set_pause_charging();
+		}
 
 		strcpy(m_fc41d_ble.cmd_gatt_data_buf,m_fc41d_ble.cmd_resp_raw_data_buf);
 		strcpy(m_fc41d_ble.cmd_gatt_uuid,"fff3");

@@ -16,10 +16,14 @@
 #define EGTN_FALSE		0x00
 
 #define EGUHA_MAIN_VERSION		"010101"
+#define AC_FREQ_HZ_100US		167
+
+#define EGUHA_MAX_AMPE			(48)
 
 #define __TEST_DMA_GPIO_STE_LED__		0
+#define __TEST_CHARGING_DEMO__			1
 
-#define AC_FREQ_HZ_100US		167
+
 
 typedef enum e_customtype_bool
 {

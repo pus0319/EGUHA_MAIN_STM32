@@ -50,8 +50,9 @@ Core/egtn_app/egtn_app_charging.o: ../Core/egtn_app/egtn_app_charging.c \
  ../Core/egtn_mw/egtn_mw_indiled.h ../Core/egtn_mw/egtn_mw_uart.h \
  ../Core/egtn_app/egtn_app_blecomm.h ../Core/egtn_lib/egtn_lib_u8queue.h \
  ../Core/egtn_mw/egtn_mw_FC41D.h ../Core/egtn_lib/egtn_lib_string.h \
- ../Core/egtn_mw/egtn_mw_adc.h ../Core/egtn_mw/egtn_mw_ntc.h \
- ../Core/egtn_mw/egtn_mw_serialflash.h ../Core/egtn_mw/egtn_mw_uart.h \
+ ../Core/egtn_app/egtn_app_charging.h ../Core/egtn_mw/egtn_mw_adc.h \
+ ../Core/egtn_mw/egtn_mw_ntc.h ../Core/egtn_mw/egtn_mw_serialflash.h \
+ ../Core/egtn_mw/egtn_mw_uart.h \
  ../Core/egtn_lib/lib_statemachine/egtn_lib_StateMachine.h
 
 ../Core/egtn_app/egtn_app_charging.h:
@@ -189,6 +190,8 @@ Core/egtn_app/egtn_app_charging.o: ../Core/egtn_app/egtn_app_charging.c \
 ../Core/egtn_mw/egtn_mw_FC41D.h:
 
 ../Core/egtn_lib/egtn_lib_string.h:
+
+../Core/egtn_app/egtn_app_charging.h:
 
 ../Core/egtn_mw/egtn_mw_adc.h:
 

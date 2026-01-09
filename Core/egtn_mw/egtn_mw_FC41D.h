@@ -18,6 +18,10 @@
 #include "egtn_lib_u8queue.h"
 #include "egtn_lib_userdelay.h"
 
+#if((__TEST_CHARGING_DEMO__) == 1)
+#include "egtn_app_charging.h"
+#endif
+
 #define FC41D_RING_BUFFER_SIZE 300
 
 #define FC41D_AT_CMD_RESP_PIPELINE_MAX	3
@@ -173,7 +177,7 @@ typedef struct s_mw_fc41d_ble
 void EGTN_MW_FC41D_push_ringbuffer(uint8_t comdt);
 
 uint8_t EGTN_MW_FC41D_startup();
-uint8_t EGTN_MW_FC41D_ble_peripheral_init();
+uint8_t EGTN_MW_FC41D_ble_peripheral_init_demo();
 void EGTN_MW_FC41D_ble_peripheral_loop();
 
 #endif /* EGTN_MW_EGTN_MW_FC41D_H_ */
